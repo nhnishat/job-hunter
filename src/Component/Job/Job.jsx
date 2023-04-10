@@ -1,8 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Job = ({ job }) => {
+const Job = ({ jobData }) => {
 	const { name, job_title, id, icon_logo, salary, address, remote, full_time } =
-		job;
+		jobData;
+	const handleJobDetails = () => {
+		console.log(job);
+	};
 	return (
 		<div className="border p-5">
 			<img className="h-52 w-52" src={icon_logo} alt="" />
@@ -23,9 +27,14 @@ const Job = ({ job }) => {
 				</p>
 				<p className="font-semibold">{salary}</p>
 			</div>
-			<button className="p-2 bg-purple-500 rounded-md font-semibold text-white">
-				View Details
-			</button>
+			<Link to="/about">
+				<button
+					onClick={() => handleJobDetails(job)}
+					className="p-2 bg-purple-500 rounded-md font-semibold text-white"
+				>
+					View Details
+				</button>
+			</Link>
 		</div>
 	);
 };
