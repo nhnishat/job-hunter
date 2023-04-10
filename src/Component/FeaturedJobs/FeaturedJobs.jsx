@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import Job from '../Job/Job';
+import { addToDb } from '../../../utilities/fakedb';
+import Jobs from '../Job/Jobs';
 
 const FeaturedJobs = ({ jobCircular }) => {
 	const [showAll, setShowAll] = useState(false);
 	const handleMoreButton = () => {
 		setShowAll(true);
-		console.log('click');
+	};
+	const handleJobDetails = (id) => {
+		console.log(id);
+		addToDb(id);
 	};
 	return (
 		<section>
@@ -18,7 +22,11 @@ const FeaturedJobs = ({ jobCircular }) => {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 				{jobCircular.slice(0, showAll ? 6 : 4).map((jobData) => (
-					<Job key={jobData.id} jobData={jobData} />
+					<Jobs
+						key={jobData.id}
+						jobData={jobData}
+						handleJobDetails={handleJobDetails}
+					/>
 				))}
 			</div>
 			<div className="text-center items-center">

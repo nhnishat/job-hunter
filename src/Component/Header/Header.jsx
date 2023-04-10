@@ -37,6 +37,16 @@ const Header = () => {
 					</li>
 					<li>
 						<NavLink
+							to="/appliedJobs"
+							className={({ isActive }) =>
+								isActive ? 'text-purple-500' : 'default'
+							}
+						>
+							Applied Jobs
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
 							to="/about"
 							className={({ isActive }) =>
 								isActive ? 'text-purple-500' : 'default'
@@ -99,6 +109,15 @@ const Header = () => {
 												Rechart
 											</Link>
 										</li>
+										<li>
+											<Link
+												to="/appliedJobs"
+												className="font-semibold tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400 "
+											>
+												Applied Jobs
+											</Link>
+										</li>
+
 										<li>
 											<Link
 												to="/about"

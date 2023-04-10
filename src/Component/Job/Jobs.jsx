@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Job = ({ jobData }) => {
+const Jobs = ({ jobData, handleJobDetails }) => {
 	const { name, job_title, id, icon_logo, salary, address, remote, full_time } =
 		jobData;
-	const handleJobDetails = () => {
-		console.log(job);
-	};
 	return (
 		<div className="border p-5">
 			<img className="h-52 w-52" src={icon_logo} alt="" />
@@ -27,9 +24,9 @@ const Job = ({ jobData }) => {
 				</p>
 				<p className="font-semibold">{salary}</p>
 			</div>
-			<Link to="/about">
+			<Link to="/JobDetails">
 				<button
-					onClick={() => handleJobDetails(job)}
+					onClick={() => handleJobDetails(id)}
 					className="p-2 bg-purple-500 rounded-md font-semibold text-white"
 				>
 					View Details
@@ -39,4 +36,4 @@ const Job = ({ jobData }) => {
 	);
 };
 
-export default Job;
+export default Jobs;
