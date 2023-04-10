@@ -1,10 +1,18 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import accounts from '../../assets/Icon/accounts 1.png';
 import business from '../../assets/Icon/business 1.png';
 import chip from '../../assets/Icon/chip 1.png';
 import social from '../../assets/Icon/social-media 1.png';
 import logo from '../../assets/logo/P3OLGJ1 copy 1.png';
+import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 const Home = () => {
+	const jobCircular = useLoaderData();
+	// const handleMoreButton = () => {
+	// 	{
+	// 	}
+	// 	console.log(jobCircular.slice(0, 4));
+	// };
 	return (
 		<div>
 			<section className="my-20">
@@ -41,7 +49,7 @@ const Home = () => {
 						need. Its your future
 					</p>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-10">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 					<div className="category-list">
 						<img src={accounts} alt="" />
 						<div className="my-3">
@@ -72,7 +80,7 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			{/* <FeaturedJobs /> */}
+			<FeaturedJobs jobCircular={jobCircular} />
 		</div>
 	);
 };
