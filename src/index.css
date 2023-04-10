@@ -9,3 +9,9 @@
 .category-list {
 	@apply w-56 border h-40 p-5 rounded-md bg-purple-50;
 }
+.footer-h {
+	@apply font-semibold text-xl mb-3 text-white;
+}
+.footer-p {
+	@apply mb-2 text-white font-normal;
+}

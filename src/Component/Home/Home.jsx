@@ -14,7 +14,7 @@ const Home = () => {
 	// 	console.log(jobCircular.slice(0, 4));
 	// };
 	return (
-		<div>
+		<div className="my-container">
 			<section className="my-20">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 					<div className="flex text-start items-center">
