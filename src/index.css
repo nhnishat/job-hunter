@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-container {
+	@apply px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8;
+}
+
+.category-list {
+	@apply w-56 border h-40 p-5 rounded-md bg-purple-50;
+}
