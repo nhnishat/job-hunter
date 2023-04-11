@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import About from './Component/About/About';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
-import Contact from './Component/Contact/Contact';
+import Blog from './Component/Blog/Blog';
 import Home from './Component/Home/Home';
 import Jobs from './Component/Job/Jobs';
 import JobDetails from './Component/JobDetails/JobDetails';
@@ -21,16 +20,12 @@ const router = createBrowserRouter([
 				loader: () => fetch('job-categories.json'),
 			},
 			{
-				path: 'about',
-				element: <About />,
-			},
-			{
 				path: 'rechart',
 				element: <Rechart />,
 			},
 			{
-				path: 'contact',
-				element: <Contact />,
+				path: 'blog',
+				element: <Blog />,
 			},
 			{
 				path: '/appliedJobs',
@@ -41,7 +36,7 @@ const router = createBrowserRouter([
 				element: <Jobs></Jobs>,
 			},
 			{
-				path: 'jobDetails',
+				path: 'jobDetails/:id',
 				element: <JobDetails />,
 				loader: () => fetch('job-categories.json'),
 			},

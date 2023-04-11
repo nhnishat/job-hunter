@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Jobs = ({ jobData, handleJobDetails }) => {
+const Jobs = ({ jobData }) => {
 	const { name, job_title, id, icon_logo, salary, address, remote, full_time } =
 		jobData;
 	return (
@@ -24,9 +24,9 @@ const Jobs = ({ jobData, handleJobDetails }) => {
 				</p>
 				<p className="font-semibold">{salary}</p>
 			</div>
-			<Link to="/JobDetails">
+			<Link to={`/jobDetails/{id}`}>
 				<button
-					onClick={() => handleJobDetails(id)}
+					// onClick={() => handleJobDetails(id)}
 					className="p-2 bg-purple-500 rounded-md font-semibold text-white"
 				>
 					View Details

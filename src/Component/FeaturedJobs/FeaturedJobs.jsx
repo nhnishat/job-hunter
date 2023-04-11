@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { addToDb } from '../../../utilities/fakedb';
 import Jobs from '../Job/Jobs';
 
 const FeaturedJobs = ({ jobCircular }) => {
@@ -7,10 +6,10 @@ const FeaturedJobs = ({ jobCircular }) => {
 	const handleMoreButton = () => {
 		setShowAll(true);
 	};
-	const handleJobDetails = (id) => {
-		console.log(id);
-		addToDb(id);
-	};
+	// const handleJobDetails = (id) => {
+	// 	console.log(id);
+	// 	addToDb(id);
+	// };
 	return (
 		<section>
 			<div className="text-center my-20 ">
@@ -25,7 +24,7 @@ const FeaturedJobs = ({ jobCircular }) => {
 					<Jobs
 						key={jobData.id}
 						jobData={jobData}
-						handleJobDetails={handleJobDetails}
+						// handleJobDetails={handleJobDetails}
 					/>
 				))}
 			</div>
