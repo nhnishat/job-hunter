@@ -35,30 +35,6 @@ const Blog = () => {
 					published as standalone packages for others to use.
 				</p>
 			</div>
-			<div className="my-8">
-				<h2 className="font-bold text-2xl text-gray-800 my-5">
-					How does useRef work?
-				</h2>
-				<p className="font-normal text-gray-700 mb-2">
-					The useRef hook in React creates a reference that persists across
-					re-renders. It returns an object with a current property that can be
-					used to read or modify the current value of the reference. It's
-					commonly used to access DOM nodes or store mutable values without
-					triggering a re-render.
-				</p>
-			</div>
-			<div className="my-8">
-				<h2 className="font-bold text-2xl text-gray-800 my-5">
-					How does UseMemo Work?
-				</h2>
-				<p className="font-normal text-gray-700 mb-2">
-					The useMemo hook in React memoizes the result of a function and
-					recomputes it only when one of the dependencies changes. It takes a
-					function and a list of dependencies as arguments, and returns the
-					memoized value. It's commonly used to optimize expensive computations
-					in a component.
-				</p>
-			</div>
 		</div>
 	);
 };

@@ -1,21 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const JobDetails = () => {
+	const dataS = useLoaderData();
+	console.log(dataS);
 	const { id } = useParams();
-	const data = useLoaderData();
-	console.log(data);
+	console.log(id);
+	const [details, setDetails] = useState();
 	useEffect(() => {
-		if (Array.isArray(data)) {
-			const pr = data.find((p) => p.id === id);
-			if (pr) {
-				console.log(pr);
-			} else {
-				console.log(`No job found with id ${id}`);
-			}
+		const myData = dataS.find((data) => data.id == id);
+		if (myData) {
+			setDetails(myData);
+			console.log(myData);
 		}
-	}, [data, id]);
-	return <div></div>;
+	}, []);
+	return (
+		<div>
+			<h1>THis is JOb Details</h1>
+		</div>
+	);
 };
 
 export default JobDetails;
