@@ -47,6 +47,19 @@ const Blog = () => {
 					triggering a re-render.
 				</p>
 			</div>
+
+			<div className="my-8">
+				<h2 className="font-bold text-2xl text-gray-800 my-5">
+					How does UseMemo Work?
+				</h2>
+				<p className="font-normal text-gray-700 mb-2">
+					The useMemo hook in React memoizes the result of a function and
+					recomputes it only when one of the dependencies changes. It takes a
+					function and a list of dependencies as arguments, and returns the
+					memoized value. It's commonly used to optimize expensive computations
+					in a component.
+				</p>
+			</div>
 		</div>
 	);
 };
