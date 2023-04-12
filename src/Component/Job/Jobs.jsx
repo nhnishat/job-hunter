@@ -14,7 +14,6 @@ const Jobs = ({ jobData }) => {
 					{remote}
 				</span>
 				<span className="p-2 border border-fuchsia-600 text-purple-500">
-					{' '}
 					{full_time}
 				</span>
 			</p>

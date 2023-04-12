@@ -10,13 +10,7 @@
       "job_title": "Software Engineer",
       "email": "careers@google.com",
       "phone": "+1 555-555-5555",
-      "address": {
-        "street": "1600 Amphitheatre Parkway",
-        "city": "Mountain View",
-        "state": "CA",
-        "zip": "94043",
-        "country": "USA"
-      },
+      "address": "Mountain View, USA",
       "job_res": "Design and develop software systems that scale and optimize business operations",
       "job_desc": "Google is seeking a highly motivated Software Engineer to join our team. In this role, you will work on cutting-edge projects and collaborate with other engineers to develop innovative solutions that will shape the future of technology. The ideal candidate will have experience in developing large-scale distributed systems, a passion for solving complex problems, and a commitment to quality and excellence. You will work in a fast-paced environment and be responsible for designing and implementing software that meets high-performance and reliability standards. We are looking for someone who is eager to learn and stay up-to-date with the latest trends and technologies.",
       "remote": "Onsite",
@@ -34,13 +28,8 @@
       "job_title": "Data Analyst",
       "email": "careers@amazon.com",
       "phone": "+1 555-555-5555",
-      "address": {
-        "street": "410 Terry Ave N",
-        "city": "Seattle",
-        "state": "WA",
-        "zip": "98109",
-        "country": "USA"
-      },
+      "address": "Seattle, USA",
+     
       "job_res": "Analyze data and generate insights to support business decision-making",
       "job_desc": "Amazon is looking for a highly skilled Data Analyst to join our team. In this role, you will work with a variety of data sources to generate insights and support decision-making across the organization. The ideal candidate will have experience in data analysis and visualization, strong problem-solving skills, and a passion for using data to drive business decisions. You will work in a dynamic and fast-paced environment, collaborating with other analysts and stakeholders to drive results. We are looking for someone who is creative, analytical, and has excellent communication and collaboration skills.",
       "remote": "Remote",
@@ -58,13 +47,9 @@
       "job_title": "Senior Product Manager",
       "email": "careers@alibaba.com",
       "phone": "+86 21 38982000",
-      "address": {
-      "street": "969 West Wen Yi Road",
-      "city": "Hangzhou",
-      "state": "",
-      "zip": "311121",
-      "country": "China"
-      },
+      "address":"Hangzhou,China",
+      
+      
       "job_res": "Drive product strategy and execution for a key business unit",
       "job_desc": "Alibaba is seeking an experienced Senior Product Manager to drive product strategy and execution for one of our key business units. In this role, you will collaborate with cross-functional teams to develop and launch new products, as well as improve existing ones. The ideal candidate will have a strong track record of successful product launches, excellent communication and leadership skills, and experience working in a fast-paced, dynamic environment. You will be responsible for developing product roadmaps, gathering requirements from stakeholders, and working closely with engineering teams to ensure successful product delivery. We are looking for someone who is passionate about technology, has a customer-focused mindset, and is dedicated to driving results.",
       "remote": "Remote",
@@ -82,13 +67,7 @@
       "job_title": "UI Designer",
       "email": "careers@netflix.com",
       "phone": "+1 555-555-5555",
-      "address": {
-      "street": "100 Winchester Circle",
-      "city": "Los Gatos",
-      "state": "CA",
-      "zip": "95032",
-      "country": "USA"
-      },
+      "address":"Los Gatos,USA",
       "job_res": "Design user interfaces that provide an intuitive and engaging user experience",
       "job_desc": "Netflix is seeking a talented UI Designer to join our team. In this role, you will be responsible for designing user interfaces that provide an intuitive and engaging user experience across multiple platforms. The ideal candidate will have experience in user-centered design, a deep understanding of user behavior, and a passion for creating beautiful and effective interfaces. You will work closely with cross-functional teams to gather requirements, develop wireframes and prototypes, and collaborate on design decisions. We are looking for someone who is highly creative, detail-oriented, and dedicated to delivering high-quality designs.",
       "remote": "Onsite",
@@ -106,13 +85,7 @@
       "job_title": "Senior Hardware Engineer",
       "email": "careers@tesla.com",
       "phone": "+1 555-555-5555",
-      "address": {
-      "street": "3500 Deer Creek Road",
-      "city": "Palo Alto",
-      "state":"CA",
-      "zip": "94304",
-      "country": "USA"
-      },
+      "address":  "Palo Alto, USA",
       "job_res": "Design, develop, and test cutting-edge hardware solutions",
       "job_desc": "Tesla is seeking a highly skilled Senior Hardware Engineer to design, develop, and test cutting-edge hardware solutions for our electric vehicles. In this role, you will work closely with cross-functional teams to design, develop, and test hardware components, including sensors, controllers, and power electronics. The ideal candidate will have a deep understanding of hardware design and testing methodologies, as well as experience with embedded systems, circuit design, and board-level layout. You will be responsible for leading hardware projects from concept to production, and working closely with software engineers to integrate hardware and software components. We are looking for someone who is passionate about technology, detail-oriented, and dedicated to delivering high-quality results.",
       "remote": "Remote",
@@ -130,13 +103,8 @@
       "job_title": "Software Engineer",
       "email": "careers@microsoft.com",
       "phone": "+1 555-555-5555",
-      "address": {
-      "street": "One Microsoft Way",
-      "city": "Redmond",
-      "state": "WA",
-      "zip": "98052",
-      "country": "USA"
-      },
+      "address":"Redmond , USA",
+     
       "job_res": "Design, develop, and maintain high-quality software solutions",
       "job_desc": "Microsoft is seeking a talented Software Engineer to join our team. In this role, you will be responsible for designing, developing, and maintaining high-quality software solutions for our customers. The ideal candidate will have experience in software development, a deep understanding of software engineering principles, and a passion for creating innovative solutions. You will work closely with cross-functional teams to gather requirements, develop prototypes, and collaborate on design decisions. We are looking for someone who is highly motivated, a strong problem-solver, and dedicated to delivering high-quality results.",
       "remote": "Onsite",
