@@ -6,10 +6,7 @@ const FeaturedJobs = ({ jobCircular }) => {
 	const handleMoreButton = () => {
 		setShowAll(true);
 	};
-	// const handleJobDetails = (id) => {
-	// 	console.log(id);
-	// 	addToDb(id);
-	// };
+
 	return (
 		<section>
 			<div className="text-center my-20 ">

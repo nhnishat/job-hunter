@@ -31,8 +31,16 @@ const AppliedJobs = () => {
 	}, [products]);
 
 	return (
-		<div>
+		<div className="my-container">
 			<h2 className="font-bold text-3xl text-center my-20">Applied Jobs</h2>
+			<div className="flex gap-8 items-center justify-end">
+				<button className="my-20 p-2 bg-slate-900 rounded-md font-semibold text-white">
+					Remote
+				</button>
+				<button className="my-20 p-2 bg-zinc-950 rounded-md font-semibold text-white">
+					Full Time
+				</button>
+			</div>
 			<div>
 				{cart.map((lsJob) => (
 					<LsJob lsJob={lsJob} key={lsJob.id} />

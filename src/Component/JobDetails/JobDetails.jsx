@@ -15,12 +15,6 @@ const JobDetails = () => {
 
 	const [cart, setCart] = useState([]);
 
-	// useEffect(()=>{
-	//   const storedCart = getShoppingCart();
-
-	// console.log(storedCart);
-	// },[])
-
 	const handleAddToCart = (details) => {
 		let newSetCart = [];
 		const newExists = cart.find((pd) => pd.id == details.quantity);
@@ -31,18 +25,13 @@ const JobDetails = () => {
 		} else {
 			newExists.quantity = newExists.quantity + 1;
 			const remaining = cart.filter((pd) => pd.id !== details.quantity);
-			// console.log(re)
 			newSetCart = [...remaining, newExists];
 		}
-
 		const newCart = [...cart, details];
-		// console.log(cart)
 		setCart(newCart);
 		addToDb(details.id);
-		// console.log(newSetCart);
 	};
 
-	// console.log(details);
 	const {
 		educational_req,
 		job_desc,

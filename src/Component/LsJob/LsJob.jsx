@@ -7,7 +7,7 @@ const LsJob = ({ lsJob }) => {
 	return (
 		<div className="my-container">
 			<div className="flex justify-between items-center p-3 shadow-lg">
-				<div className="flex gap-20">
+				<div className="flex gap-20 items-center">
 					<div>
 						<img className="w-52" src={icon_logo} alt="" />
 					</div>
@@ -32,7 +32,7 @@ const LsJob = ({ lsJob }) => {
 					</div>
 				</div>
 				<div>
-					<Link to={`/jobDetails`}>
+					<Link to={'/jobDetails'}>
 						<button className=" my-20 p-2 bg-purple-500 rounded-md font-semibold text-white">
 							View Details
 						</button>

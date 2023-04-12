@@ -6,7 +6,7 @@ const Jobs = ({ jobData }) => {
 		jobData;
 	return (
 		<div className="border p-5">
-			<img className="h-52 w-52" src={icon_logo} alt="" />
+			<img className="h-52 w-52 text-center" src={icon_logo} alt="" />
 			<h2 className="my-2 font-bold">{job_title}</h2>
 			<h3 className="my-2 font-semibold">{name}</h3>
 			<p className="my-3 font-semibold">
@@ -22,10 +22,7 @@ const Jobs = ({ jobData }) => {
 				<p className="font-semibold">{salary}</p>
 			</div>
 			<Link to={`/jobDetails/${id}`}>
-				<button
-					// onClick={() => handleJobDetails(id)}
-					className="p-2 bg-purple-500 rounded-md font-semibold text-white"
-				>
+				<button className="p-2 bg-purple-500 rounded-md font-semibold text-white">
 					View Details
 				</button>
 			</Link>
