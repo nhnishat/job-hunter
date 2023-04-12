@@ -24,7 +24,7 @@ const Jobs = ({ jobData }) => {
 				</p>
 				<p className="font-semibold">{salary}</p>
 			</div>
-			<Link to={`/jobDetails/{id}`}>
+			<Link to={`/jobDetails/${id}`}>
 				<button
 					// onClick={() => handleJobDetails(id)}
 					className="p-2 bg-purple-500 rounded-md font-semibold text-white"
