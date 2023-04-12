@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
 import Blog from './Component/Blog/Blog';
+import Error from './Component/Error/Error';
 import Home from './Component/Home/Home';
 import Jobs from './Component/Job/Jobs';
 import JobDetails from './Component/JobDetails/JobDetails';
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
+		errorElement: <Error />,
 		children: [
 			{
 				path: '/',
@@ -30,6 +32,7 @@ const router = createBrowserRouter([
 			{
 				path: '/appliedJobs',
 				element: <AppliedJobs />,
+				// loader: jobsLoader,
 			},
 			{
 				path: 'job',
