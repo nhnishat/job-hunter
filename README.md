@@ -12,6 +12,4 @@ Create a Job Circular Web page
 
 ## Deploy Link
 
-```bash
-  Diploy Link : https://phenomenal-raindrop-84df80.netlify.app/
-```
+#Diploy Link : https://phenomenal-raindrop-84df80.netlify.app/
