@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../../../utilities/fakedb';
 
 const JobDetails = () => {
 	const dataS = useLoaderData();
@@ -11,7 +12,37 @@ const JobDetails = () => {
 			setDetails(myData);
 		}
 	}, []);
-	console.log(details);
+
+	const [cart, setCart] = useState([]);
+
+	// useEffect(()=>{
+	//   const storedCart = getShoppingCart();
+
+	// console.log(storedCart);
+	// },[])
+
+	const handleAddToCart = (details) => {
+		let newSetCart = [];
+		const newExists = cart.find((pd) => pd.id == details.quantity);
+		// console.log(newExists)
+		if (!newExists) {
+			details.quantity = 1;
+			newSetCart = [...cart, details];
+		} else {
+			newExists.quantity = newExists.quantity + 1;
+			const remaining = cart.filter((pd) => pd.id !== details.quantity);
+			// console.log(re)
+			newSetCart = [...remaining, newExists];
+		}
+
+		const newCart = [...cart, details];
+		// console.log(cart)
+		setCart(newCart);
+		addToDb(details.id);
+		// console.log(newSetCart);
+	};
+
+	// console.log(details);
 	const {
 		educational_req,
 		job_desc,
@@ -86,7 +117,10 @@ const JobDetails = () => {
 					</div>
 					<div>
 						<Link to="/appliedJobs">
-							<button className=" my-20 p-2 bg-purple-500 rounded-md font-semibold text-white w-full">
+							<button
+								onClick={() => handleAddToCart(details)}
+								className=" my-20 p-2 bg-purple-500 rounded-md font-semibold text-white w-full"
+							>
 								Apply Now
 							</button>
 						</Link>

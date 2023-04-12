@@ -18,9 +18,7 @@ const Jobs = ({ jobData }) => {
 				</span>
 			</p>
 			<div className="flex gap-10 my-4">
-				<p className="font-semibold ">
-					{address.city},{address.country}
-				</p>
+				<p className="font-semibold ">{address}</p>
 				<p className="font-semibold">{salary}</p>
 			</div>
 			<Link to={`/jobDetails/${id}`}>

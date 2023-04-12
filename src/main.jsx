@@ -8,6 +8,7 @@ import Error from './Component/Error/Error';
 import Home from './Component/Home/Home';
 import Jobs from './Component/Job/Jobs';
 import JobDetails from './Component/JobDetails/JobDetails';
+import LsJob from './Component/LsJob/LsJob';
 import Rechart from './Component/Rechart/Rechart';
 import './index.css';
 const router = createBrowserRouter([
@@ -32,7 +33,10 @@ const router = createBrowserRouter([
 			{
 				path: '/appliedJobs',
 				element: <AppliedJobs />,
-				// loader: jobsLoader,
+			},
+			{
+				path: '/lsJob',
+				element: <LsJob />,
 			},
 			{
 				path: 'job',
